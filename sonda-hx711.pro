@@ -1,4 +1,4 @@
-update=Ter 10 Out 2017 18:15:49 BRT
+update=Thu 12 Oct 2017 08:54:48 PM -00
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=/home/dimas/progs/src/kicad_sources/library-repos/kicad-library/library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=custom-components
+LibName31=Switch
