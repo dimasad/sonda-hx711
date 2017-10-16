@@ -875,7 +875,7 @@ F 3 "" H 3050 6600 50  0001 C CNN
 	1    3050 6600
 	1    0    0    -1  
 $EndComp
-Text Label 4400 3200 0    60   ~ 0
+Text Label 4400 2550 0    60   ~ 0
 RTC_INT
 $Comp
 L CP1 C2
@@ -1271,19 +1271,18 @@ F 3 "" H 1200 2000 50  0001 C CNN
 	1    1100 2250
 	1    0    0    -1  
 $EndComp
-Text Label 4400 1200 0    60   ~ 0
-qbar_data
-Text Label 4450 3700 0    60   ~ 0
-qbar_clk
 Text Label 4400 3500 0    60   ~ 0
-angles_data
+qbar_data
 Text Label 4400 3600 0    60   ~ 0
+qbar_clk
+Text Label 4400 3700 0    60   ~ 0
+angles_data
+Text Label 4350 1200 0    60   ~ 0
 angles_clk
 NoConn ~ 2450 2000
 NoConn ~ 2450 2850
 NoConn ~ 4350 3300
 NoConn ~ 4350 2450
-NoConn ~ 4350 2550
 NoConn ~ 4350 1900
 NoConn ~ 4350 1800
 $Comp
@@ -1755,7 +1754,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 6550 3050 6600
 Wire Wire Line
-	4350 3200 4750 3200
+	4350 2550 4750 2550
 Connection ~ 1450 3250
 Connection ~ 750  3250
 Wire Wire Line
@@ -1846,11 +1845,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 4850 11000 4850
 Wire Wire Line
-	4350 3700 4900 3700
-Wire Wire Line
-	4350 3500 4950 3500
-Wire Wire Line
-	4350 3600 4950 3600
+	4350 3700 4950 3700
 Wire Wire Line
 	2150 1700 2450 1700
 Wire Wire Line
@@ -1925,7 +1920,12 @@ Wire Wire Line
 Wire Wire Line
 	4350 1400 4350 1200
 Wire Wire Line
-	4350 1200 4750 1200
+	4350 3500 4850 3500
 NoConn ~ 4350 1600
 NoConn ~ 4350 3400
+Wire Wire Line
+	4350 1200 4800 1200
+Wire Wire Line
+	4350 3600 4850 3600
+NoConn ~ 4350 3200
 $EndSCHEMATC
