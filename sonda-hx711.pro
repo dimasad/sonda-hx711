@@ -1,4 +1,4 @@
-update=Thu 12 Oct 2017 08:54:48 PM -00
+update=Ter 17 Out 2017 19:57:58 BRST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/dimas/progs/src/kicad_sources/library-repos/kicad-library/library
+LibDir=/home/dimas/progs/src/kicad_sources/library_repos/kicad-library/library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
