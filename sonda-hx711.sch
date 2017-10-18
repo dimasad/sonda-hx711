@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:custom-components
+LIBS:Switch
 LIBS:sonda-hx711-cache
 EELAYER 25 0
 EELAYER END
@@ -696,7 +697,7 @@ U 1 1 59DDA493
 P 9550 6000
 F 0 "U8" H 9550 5600 60  0000 C CNN
 F 1 "MPX10" H 9550 6350 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 9550 6000 60  0001 C CNN
+F 2 "custom-footprints:Freescale_Case_344C-01-IssueB-Unibody" H 9550 6000 60  0001 C CNN
 F 3 "" H 9550 6000 60  0001 C CNN
 	1    9550 6000
 	1    0    0    -1  
