@@ -78,39 +78,6 @@ F 3 "" H 1100 2650 50  0000 C CNN
 	1    1100 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L +BATT #PWR04
-U 1 1 59DD2DE0
-P 750 3200
-F 0 "#PWR04" H 750 3050 50  0001 C CNN
-F 1 "+BATT" H 750 3340 50  0000 C CNN
-F 2 "" H 750 3200 50  0000 C CNN
-F 3 "" H 750 3200 50  0000 C CNN
-	1    750  3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR05
-U 1 1 59DD2DF0
-P 1100 3650
-F 0 "#PWR05" H 1100 3400 50  0001 C CNN
-F 1 "GND" H 1100 3500 50  0000 C CNN
-F 2 "" H 1100 3650 50  0000 C CNN
-F 3 "" H 1100 3650 50  0000 C CNN
-	1    1100 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3V3 #PWR06
-U 1 1 59DD2E0C
-P 1450 3200
-F 0 "#PWR06" H 1450 3050 50  0001 C CNN
-F 1 "+3V3" H 1450 3340 50  0000 C CNN
-F 2 "" H 1450 3200 50  0000 C CNN
-F 3 "" H 1450 3200 50  0000 C CNN
-	1    1450 3200
-	1    0    0    -1  
-$EndComp
 Text Notes 700  1900 0    60   ~ 0
 Voltage regulators
 $Comp
@@ -879,23 +846,12 @@ $EndComp
 Text Label 4400 2550 0    60   ~ 0
 RTC_INT
 $Comp
-L CP1 C5
-U 1 1 59DF8BA0
-P 1450 3450
-F 0 "C5" H 1475 3550 50  0000 L CNN
-F 1 "22uF" H 1475 3350 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 1450 3450 50  0001 C CNN
-F 3 "" H 1450 3450 50  0001 C CNN
-	1    1450 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L CP1 C1
 U 1 1 59DF9C3E
 P 750 2450
 F 0 "C1" H 775 2550 50  0000 L CNN
 F 1 "22uF" H 775 2350 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 750 2450 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D4.5mm_P2.50mm" H 750 2450 50  0001 C CNN
 F 3 "" H 750 2450 50  0001 C CNN
 	1    750  2450
 	-1   0    0    -1  
@@ -906,7 +862,7 @@ U 1 1 59DF9F33
 P 1450 2450
 F 0 "C4" H 1475 2550 50  0000 L CNN
 F 1 "22uF" H 1475 2350 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 1450 2450 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D4.5mm_P2.50mm" H 1450 2450 50  0001 C CNN
 F 3 "" H 1450 2450 50  0001 C CNN
 	1    1450 2450
 	1    0    0    -1  
@@ -1201,7 +1157,7 @@ F 3 "" H 4900 6650 50  0001 C CNN
 $EndComp
 Text Notes 4850 6300 0    60   ~ 0
 Data out
-Text Label 2050 2750 0    60   ~ 0
+Text Label 4450 2450 0    60   ~ 0
 BATT_MON
 $Comp
 L MPXA6115A U4
@@ -1229,7 +1185,7 @@ Text Label 4850 5050 0    60   ~ 0
 PSTAT
 Text Notes 4050 4600 0    60   ~ 0
 Static pressure sensor
-Text Label 4400 2350 0    60   ~ 0
+Text Label 4500 2350 0    60   ~ 0
 PSTAT
 Text Label 10450 2350 0    60   ~ 0
 qbar_data
@@ -1239,17 +1195,6 @@ Text Label 10450 4700 0    60   ~ 0
 angles_data
 Text Label 10450 4850 0    60   ~ 0
 angles_clk
-$Comp
-L AP1117-33 U2
-U 1 1 59E222FC
-P 1100 3250
-F 0 "U2" H 1200 3000 50  0000 C CNN
-F 1 "AP1117-33" H 900 3400 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-223-3Lead_TabPin2" H 1100 3450 50  0001 C CNN
-F 3 "" H 1200 3000 50  0001 C CNN
-	1    1100 3250
-	1    0    0    -1  
-$EndComp
 $Comp
 L AP1117-50 U1
 U 1 1 59E22A1B
@@ -1261,13 +1206,13 @@ F 3 "" H 1200 2000 50  0001 C CNN
 	1    1100 2250
 	1    0    0    -1  
 $EndComp
-Text Label 4400 3500 0    60   ~ 0
-qbar_data
-Text Label 4400 3600 0    60   ~ 0
-qbar_clk
 Text Label 4400 3700 0    60   ~ 0
+qbar_data
+Text Label 4400 1200 0    60   ~ 0
+qbar_clk
+Text Label 4400 3500 0    60   ~ 0
 angles_data
-Text Label 4350 1200 0    60   ~ 0
+Text Label 4400 3600 0    60   ~ 0
 angles_clk
 NoConn ~ 2450 2000
 NoConn ~ 2450 2850
@@ -1319,7 +1264,6 @@ F 3 "" H 1150 1350 50  0001 C CNN
 	1    1150 1350
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4350 2250
 $Comp
 L +5VA #PWR058
 U 1 1 59E3F5F2
@@ -1500,14 +1444,6 @@ Wire Wire Line
 	2400 1500 2450 1500
 Wire Wire Line
 	2150 1400 2450 1400
-Wire Wire Line
-	1100 3550 1100 3650
-Wire Wire Line
-	1450 3250 1400 3250
-Wire Wire Line
-	1450 3200 1450 3300
-Wire Wire Line
-	750  3250 800  3250
 Wire Wire Line
 	1100 2550 1100 2650
 Wire Wire Line
@@ -1743,7 +1679,6 @@ Wire Wire Line
 	3050 6550 3050 6600
 Wire Wire Line
 	4350 2550 4750 2550
-Connection ~ 1450 3250
 Connection ~ 750  2250
 Wire Wire Line
 	750  2600 1450 2600
@@ -1810,15 +1745,11 @@ Wire Wire Line
 Wire Wire Line
 	5000 6550 5050 6550
 Wire Wire Line
-	2050 2750 2450 2750
-Wire Wire Line
 	3950 5600 3950 5550
 Wire Wire Line
 	3950 4500 3950 4550
 Wire Wire Line
 	5100 5050 4800 5050
-Wire Wire Line
-	4350 2350 4650 2350
 Wire Wire Line
 	10400 2350 10900 2350
 Wire Wire Line
@@ -1828,7 +1759,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 4850 11000 4850
 Wire Wire Line
-	4350 3700 4950 3700
+	4350 3500 4950 3500
 Wire Wire Line
 	2150 1700 2450 1700
 Wire Wire Line
@@ -1899,18 +1830,13 @@ Wire Wire Line
 Wire Wire Line
 	4350 1400 4350 1200
 Wire Wire Line
-	4350 3500 4850 3500
+	4350 3700 4850 3700
 NoConn ~ 4350 1600
 NoConn ~ 4350 3400
 Wire Wire Line
-	4350 1200 4800 1200
-Wire Wire Line
 	4350 3600 4850 3600
 Wire Wire Line
-	750  3200 750  3250
-Wire Wire Line
-	1100 3600 1450 3600
-Connection ~ 1100 3600
+	4350 1200 4850 1200
 NoConn ~ 4350 1500
 Text Label 5350 3800 0    60   ~ 0
 status_LED
@@ -1919,4 +1845,133 @@ status_LED
 Connection ~ 4900 3000
 Wire Wire Line
 	4350 3200 4850 3200
+Text Label 4000 6600 2    60   ~ 0
+SDA
+Text Label 4000 6700 2    60   ~ 0
+SCL
+$Comp
+L GND #PWR067
+U 1 1 59E8AB60
+P 3950 6800
+F 0 "#PWR067" H 3950 6550 50  0001 C CNN
+F 1 "GND" H 3950 6650 50  0000 C CNN
+F 2 "" H 3950 6800 50  0001 C CNN
+F 3 "" H 3950 6800 50  0001 C CNN
+	1    3950 6800
+	-1   0    0    -1  
+$EndComp
+Text Notes 3950 6300 0    60   ~ 0
+I2C
+Wire Wire Line
+	3950 6800 4000 6800
+Wire Wire Line
+	4000 6700 3850 6700
+Wire Wire Line
+	4000 6600 3850 6600
+Wire Wire Line
+	3850 6500 4000 6500
+$Comp
+L CONN_01X04 J4
+U 1 1 59E8ADCD
+P 4200 6650
+F 0 "J4" H 4200 6900 50  0000 C CNN
+F 1 "CONN_01X04" V 4300 6650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 4200 6650 50  0001 C CNN
+F 3 "" H 4200 6650 50  0001 C CNN
+	1    4200 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR068
+U 1 1 59E8AB6C
+P 3850 6500
+F 0 "#PWR068" H 3850 6350 50  0001 C CNN
+F 1 "+3V3" H 4000 6550 50  0000 C CNN
+F 2 "" H 3850 6500 50  0001 C CNN
+F 3 "" H 3850 6500 50  0001 C CNN
+	1    3850 6500
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 2450 2750
+Wire Wire Line
+	4350 2250 4500 2250
+Wire Wire Line
+	4500 2250 4500 2350
+Wire Wire Line
+	4500 2350 4750 2350
+Wire Wire Line
+	4350 2350 4450 2350
+Wire Wire Line
+	4450 2350 4450 2450
+Wire Wire Line
+	4450 2450 4900 2450
+Connection ~ 1100 3600
+Wire Wire Line
+	1100 3600 1450 3600
+Wire Wire Line
+	750  3200 750  3250
+Connection ~ 1450 3250
+Wire Wire Line
+	750  3250 800  3250
+Wire Wire Line
+	1450 3200 1450 3300
+Wire Wire Line
+	1450 3250 1400 3250
+Wire Wire Line
+	1100 3550 1100 3650
+$Comp
+L AP1117-33 U2
+U 1 1 59E222FC
+P 1100 3250
+F 0 "U2" H 1200 3000 50  0000 C CNN
+F 1 "AP1117-33" H 900 3400 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3Lead_TabPin2" H 1100 3450 50  0001 C CNN
+F 3 "" H 1200 3000 50  0001 C CNN
+	1    1100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C5
+U 1 1 59DF8BA0
+P 1450 3450
+F 0 "C5" H 1475 3550 50  0000 L CNN
+F 1 "22uF" H 1475 3350 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D4.5mm_P2.50mm" H 1450 3450 50  0001 C CNN
+F 3 "" H 1450 3450 50  0001 C CNN
+	1    1450 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR06
+U 1 1 59DD2E0C
+P 1450 3200
+F 0 "#PWR06" H 1450 3050 50  0001 C CNN
+F 1 "+3V3" H 1450 3340 50  0000 C CNN
+F 2 "" H 1450 3200 50  0000 C CNN
+F 3 "" H 1450 3200 50  0000 C CNN
+	1    1450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 59DD2DF0
+P 1100 3650
+F 0 "#PWR05" H 1100 3400 50  0001 C CNN
+F 1 "GND" H 1100 3500 50  0000 C CNN
+F 2 "" H 1100 3650 50  0000 C CNN
+F 3 "" H 1100 3650 50  0000 C CNN
+	1    1100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR04
+U 1 1 59DD2DE0
+P 750 3200
+F 0 "#PWR04" H 750 3050 50  0001 C CNN
+F 1 "+BATT" H 750 3340 50  0000 C CNN
+F 2 "" H 750 3200 50  0000 C CNN
+F 3 "" H 750 3200 50  0000 C CNN
+	1    750  3200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
